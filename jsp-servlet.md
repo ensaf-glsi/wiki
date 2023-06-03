@@ -4,28 +4,28 @@
 
 ## Sommaire
 
-1. Introduction aux concepts de base
-2. Introduction aux Servlets et JSP
-3. Environnement de développement
-4. Les Servlets en détail
-5. Les JSP en détail
-6. Intégration Servlets-JSP
-7. Les Filtres en Java Web
-8. Exercices pratiques
+- Introduction aux concepts de base
+- Introduction aux Servlets et JSP
+- Environnement de développement
+- Les Servlets en détail
+- Les JSP en détail
+- Intégration Servlets-JSP
+- Les Filtres en Java Web
+- Exercices pratiques
 
 ---
 
 ## Introduction aux concepts de base
 
-- Qu'est-ce qu'un protocole ?
-- Qu'est-ce qu'un port ?
-- Qu'est-ce qu'HTTP ?
-- Qu'est-ce qu'un serveur ?
-- Quelle est la différence entre un serveur web et un serveur d'application ?
+1. Qu'est-ce qu'un protocole ?
+2. Qu'est-ce qu'un port ?
+3. Qu'est-ce qu'HTTP ?
+4. Qu'est-ce qu'un serveur ?
+5. Quelle est la différence entre un serveur web et un serveur d'application ?
 
 --
 
-### Qu'est-ce qu'un protocole ?
+### 1. Qu'est-ce qu'un protocole ?
 
 - Un protocole est un ensemble de règles qui définissent comment les données sont transmises et reçues sur un réseau.
 - Les protocoles assurent que les ordinateurs et les réseaux peuvent communiquer efficacement entre eux.
@@ -34,14 +34,14 @@
 
 --
 
-### Qu'est-ce qu'un port ?
+### 2. Qu'est-ce qu'un port ?
 
 - Un port est utilisé par le protocole de transport (comme TCP ou UDP) pour distinguer les différentes applications ou processus qui communiquent sur le réseau.
 - C'est comme un numéro d'appartement pour les données - il aide le système à savoir où envoyer les données.
 
 --
 
-### Qu'est-ce qu'HTTP ?
+### 3. Qu'est-ce qu'HTTP ?
 
 - HTTP signifie "Hypertext Transfer Protocol".
 - C'est le protocole utilisé pour transférer des données sur le web.
@@ -50,7 +50,7 @@
 
 --
 
-### Qu'est-ce qu'un serveur ?
+### 4. Qu'est-ce qu'un serveur ?
 
 - Un serveur est un ordinateur ou un système qui fournit des ressources, des données, des services, ou des programmes à d'autres ordinateurs, connus sous le nom de clients, sur un réseau.
 - En termes plus généraux, on peut aussi parler de "serveur" pour désigner le logiciel qui implémente une telle fonctionnalité, quel que soit le type de machine sur lequel il tourne.
@@ -58,7 +58,7 @@
 
 --
 
-### Quelle est la différence entre un serveur web et un serveur d'application ?
+### 5. Quelle est la différence entre un serveur web et un serveur d'application ?
 
 - Un serveur web est un serveur qui stocke des pages web et les rend accessibles via le réseau (généralement Internet) aux clients qui en font la demande via leur navigateur web.
 - Un serveur d'application est un serveur qui exécute des applications sur le côté serveur et envoie les résultats au client. Ces applications peuvent être très diverses, y compris des applications web, mais elles sont plus complexes et ont plus de fonctionnalités que les pages web statiques servies par un serveur web.
@@ -68,13 +68,13 @@
 
 ## Introduction aux Servlets et JSP
 
-- Qu'est-ce qu'un Servlet ?
-- Qu'est-ce qu'une JSP ?
-- Pourquoi utiliser Servlets et JSP ?
+1. Qu'est-ce qu'un Servlet ?
+2. Qu'est-ce qu'une JSP ?
+3. Pourquoi utiliser Servlets et JSP ?
 
 --
 
-### Qu'est-ce qu'un Servlet ?
+### 1. Qu'est-ce qu'un Servlet ?
 
 - Un Servlet est une classe Java qui peut gérer les requêtes HTTP sur un serveur web.
 - Il est généralement utilisé pour générer des pages web dynamiques en réponse à des requêtes de clients.
@@ -82,7 +82,7 @@
 
 --
 
-### Qu'est-ce qu'une JSP ?
+### 2. Qu'est-ce qu'une JSP ?
 
 - JSP signifie JavaServer Pages.
 - C'est une technologie qui permet aux développeurs d'écrire du code HTML et du code Java dans le même fichier.
@@ -91,7 +91,7 @@
 
 --
 
-### Pourquoi utiliser Servlets et JSP ?
+### 3. Pourquoi utiliser Servlets et JSP ?
 
 - Ils permettent de créer des applications web dynamiques avec Java, un langage qui offre de nombreuses fonctionnalités et une grande flexibilité.
 - Ils sont intégrés dans la plateforme Java EE, qui fournit de nombreux outils et services pour les applications web.
@@ -101,14 +101,14 @@
 
 ## Environnement de développement
 
-- Qu'est-ce qu'Eclipse ?
-- Comment configurer Eclipse pour le développement web Java ?
-- Qu'est-ce que Tomcat ?
-- Comment configurer Tomcat dans Eclipse ?
+1. Qu'est-ce qu'Eclipse ?
+2. Comment configurer Eclipse pour le développement web Java ?
+3. Qu'est-ce que Tomcat ?
+4. Comment configurer Tomcat dans Eclipse ?
 
 --
 
-### Qu'est-ce qu'Eclipse ?
+### 1. Qu'est-ce qu'Eclipse ?
 
 - Eclipse est un environnement de développement intégré (IDE) largement utilisé pour le développement en Java.
 - Il offre une multitude de fonctionnalités, comme l'achèvement automatique du code, la refactorisation intelligente, et le débogage facile.
@@ -116,21 +116,21 @@
 
 --
 
-### Comment configurer Eclipse pour le développement web Java ?
+### 2. Comment configurer Eclipse pour le développement web Java ?
 
 - Vous pouvez télécharger Eclipse IDE for Enterprise Java and Web Developers sur le site web officiel d'Eclipse.
 - Une fois installé, vous pouvez créer un nouveau projet Maven avec support web.
 
 --
 
-### Qu'est-ce que Tomcat ?
+### 3. Qu'est-ce que Tomcat ?
 
 - Apache Tomcat est un serveur d'applications Java qui peut exécuter des applications web écrites en Java, y compris les Servlets et les JSP.
 - C'est un choix populaire pour le développement et le déploiement d'applications web Java.
 
 --
 
-### Comment configurer Tomcat dans Eclipse ?
+### 4. Comment configurer Tomcat dans Eclipse ?
 
 - Dans Eclipse, vous pouvez configurer Tomcat comme serveur d'applications pour votre projet.
 - Vous devrez d'abord installer Tomcat, puis le configurer dans Eclipse.
@@ -139,16 +139,16 @@
 
 ## Les Servlets en détail
 
-- Cycle de vie d'un Servlet
-- Création et configuration d'un Servlet
-- Gestion des requêtes HTTP
-- Gestion des sessions
-- Gestion des réponses HTTP
-- Gestion des cookies
+1. Cycle de vie d'un Servlet
+2. Création et configuration d'un Servlet
+3. Gestion des requêtes HTTP
+4. Gestion des sessions
+5. Gestion des réponses HTTP
+6. Gestion des cookies
 
 --
 
-### Cycle de vie d'un Servlet
+### 1. Cycle de vie d'un Servlet
 
 1. Chargement du Servlet : Le serveur web charge le Servlet en mémoire lorsqu'il est nécessaire ou lors du démarrage.
 2. Initialisation : Le Servlet est initialisé avec la méthode `init()`. Cette méthode est appelée une seule fois pendant le cycle de vie du Servlet.
@@ -157,13 +157,13 @@
 
 --
 
-### Cycle de vie d'un Servlet -
+#### Cycle de vie d'un Servlet - Illustration
 
 ![Illustration](/wiki/resources/servlet-cycle-de-vie.jpg)
 
 --
 
-### Création et configuration d'un Servlet
+### 2. Création et configuration d'un Servlet
 
 - Créez une classe Java qui hérite de la classe `HttpServlet`.
 - Annoter la classe avec `@WebServlet` pour indiquer au serveur qu'il s'agit d'un Servlet.
@@ -171,7 +171,7 @@
 
 --
 
-### Création et configuration d'un Servlet - exemple
+#### Exemple de Servlet
 
 ```java
 import javax.servlet.*;
@@ -202,7 +202,7 @@ public class HelloServlet extends HttpServlet {
 
 --
 
-### Annotation @WebServlet
+#### Annotation @WebServlet
 
 L'annotation `@WebServlet` est utilisée pour déclarer un Servlet en Java. Elle contient plusieurs attributs pour la configuration :
 
@@ -213,7 +213,7 @@ L'annotation `@WebServlet` est utilisée pour déclarer un Servlet en Java. Elle
 
 --
 
-### Les méthodes HTTP dans les Servlets
+### 3. Gestion des requêtes HTTP
 
 Les Servlets gèrent différentes méthodes HTTP via les méthodes correspondantes dans `HttpServlet` :
 
@@ -227,7 +227,7 @@ Chaque méthode `doXXX` a la même signature : `(HttpServletRequest req, HttpSer
 
 --
 
-## Obtenir des informations sur une requête
+#### Obtenir des informations sur une requête
 
 Pour obtenir les informations sur la requête HTTP, nous utilisons les méthodes suivantes de l'objet HttpServletRequest :
 
@@ -239,7 +239,7 @@ Pour obtenir les informations sur la requête HTTP, nous utilisons les méthodes
 
 --
 
-### Récupération des paramètres de requête
+#### Récupération des paramètres de requête
 
 L'objet `HttpServletRequest` permet de récupérer les paramètres de la requête HTTP. Ces paramètres peuvent provenir de la chaîne de requête dans l'URL (pour les requêtes GET) ou du corps de la requête (pour les requêtes POST, PUT ...).
 
@@ -251,7 +251,7 @@ L'objet `HttpServletRequest` permet de récupérer les paramètres de la requêt
 
 --
 
-### Utilisation des attributs de requête
+#### Utilisation des attributs de requête
 
 Les attributs de requête sont des données qui sont associées à une requête HTTP spécifique. Ils sont stockés dans l'objet `HttpServletRequest` et peuvent être utilisés pour passer des informations entre différentes parties de votre application.
 
@@ -264,7 +264,7 @@ Les attributs de requête sont des données qui sont associées à une requête 
 
 --
 
-### Gestion des sessions
+### 4. Gestion des sessions
 
 - Les sessions permettent de stocker des informations sur un utilisateur entre plusieurs requêtes HTTP.
 - Vous pouvez créer et accéder aux sessions avec l'objet `HttpServletRequest`.
@@ -279,7 +279,7 @@ Les attributs de requête sont des données qui sont associées à une requête 
 
 --
 
-### Utilisation des attributs de session
+#### Utilisation des attributs de session
 
 Les attributs de session sont des données qui sont associées à une session utilisateur spécifique. Ils sont stockés dans l'objet `HttpSession` et peuvent être utilisés pour passer des informations entre différentes requêtes d'un même utilisateur.
 
@@ -294,7 +294,7 @@ Les attributs de session sont des données qui sont associées à une session ut
 
 --
 
-### Destruction de la Session
+#### Destruction de la Session
 
 La session est détruite quand :
 
@@ -304,7 +304,7 @@ La session est détruite quand :
 
 --
 
-### Gestion des réponses HTTP
+### 5. Gestion des réponses HTTP
 
 - Utilisez l'objet `HttpServletResponse` pour envoyer des réponses HTTP aux clients.
 - Vous pouvez définir le code de statut, les en-têtes et le contenu de la réponse.
@@ -312,7 +312,7 @@ La session est détruite quand :
 
 --
 
-### Gestion des cookies
+### 6. Gestion des cookies
 
 - Les cookies sont de petits morceaux de données stockés par le navigateur et renvoyés au serveur avec chaque requête.
 - Vous pouvez créer des cookies avec la classe `Cookie` et les envoyer au client avec l'objet `HttpServletResponse`.
@@ -332,3 +332,16 @@ La session est détruite quand :
       String nom = cookie.getValue();
       // ...
 ```
+
+## JSP en détail
+
+1. Qu'est-ce que le langage de balisage JSP ?
+2. Cycle de vie d'une page JSP
+3. Syntaxe et directives JSP
+   - Les déclarations
+   - Les expressions
+   - Les directives
+4. Les balises JSP et Java Standard Tag Library (JSTL)
+5. Expression Language (EL)
+6. Gestion des formulaires avec JSP
+7. Gestion des erreurs dans JSP
