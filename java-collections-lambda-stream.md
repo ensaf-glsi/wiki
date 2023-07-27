@@ -21,7 +21,7 @@
 4. Enumeration
 5. Différences entre Iterator et Enumeration
 
---
+----
 
 ### 1. Définition
 
@@ -29,7 +29,7 @@ Les Collections en Java sont des structures de données similaires aux tableaux,
 
 Elles peuvent contenir des éléments dynamiques et de différents types. Les Collections en Java sont fournies principalement via le Java Collections Framework.
 
---
+----
 
 ### 2. Types de Collections
 
@@ -39,7 +39,7 @@ Il existe plusieurs types de collections, y compris `List`, `Set` et `Map`. Chac
 2. **`Set`** : Une collection qui ne peut pas contenir des éléments duplicats. Exemples : `HashSet`, `LinkedHashSet`, `TreeSet`
 3. **`Map`** : Une collection de paires clé/valeur. Elle ne peut pas contenir de clés dupliquées et chaque clé est associée à une valeur. Exemple : `HashMap`, `LinkedHashMap`, `TreeMap`
 
---
+----
 
 ### 3. Iterator
 
@@ -52,7 +52,7 @@ while(iterator.hasNext()){
 }
 ```
 
---
+----
 
 ### 4. Enumeration
 
@@ -65,7 +65,7 @@ while(enumeration.hasMoreElements()){
 }
 ```
 
---
+----
 
 ### 5. Différence entre Iterators et Enumerations -1/2-
 
@@ -73,7 +73,7 @@ while(enumeration.hasMoreElements()){
 2. **Méthodes de suppression** : `Iterator` a une méthode `remove()` qui permet de supprimer l'élément actuel de la collection sous-jacente. `Enumeration` ne fournit pas cette fonctionnalité.
 3. **Nom des méthodes** : Les méthodes dans `Iterator` sont `hasNext()` et `next()`, tandis que dans `Enumeration` elles sont `hasMoreElements()` et `nextElement()`.
 
---
+----
 
 ### 5. Différence entre Iterators et Enumerations -2/2-
 
@@ -91,7 +91,7 @@ En général, on recommande d'utiliser `Iterator` pour de nouveaux développemen
 3. Pourquoi utiliser des expressions lambda?
 4. Exemples pratiques d'expressions lambda
 
---
+----
 
 ### 1. Qu'est-ce que la programmation fonctionnelle?
 
@@ -99,7 +99,7 @@ La programmation fonctionnelle est un style de programmation qui traite le calcu
 
 C'est une approche déclarative de la programmation, ce qui signifie que vous décrivez à quoi doit ressembler le résultat, et non comment y parvenir.
 
---
+----
 
 ### 2. Introduction aux expressions lambda en Java
 
@@ -116,13 +116,13 @@ Par exemple, un bout de code lambda qui ajoute deux nombres pourrait ressembler 
     (a, b) -> a + b
 ```
 
---
+----
 
 ### 3. Pourquoi utiliser des expressions lambda?
 
 Les expressions lambda permettent d'écrire du code plus concis et plus lisible. Elles sont particulièrement utiles pour la programmation fonctionnelle et sont souvent utilisées avec les streams en Java.
 
---
+----
 
 ### 4. Exemples pratiques d'expressions lambda
 
@@ -148,7 +148,7 @@ Les expressions lambda permettent d'écrire du code plus concis et plus lisible.
 5. `Method References`
 6. Exemples et exercices pratiques
 
---
+----
 
 ### 1. Qu'est-ce qu'une interface fonctionnelle ?
 
@@ -158,7 +158,7 @@ Une interface fonctionnelle est une interface qui contient **une seule méthode 
 
 Elles sont utilisées comme cible de type pour les expressions lambda et les références de méthode.
 
---
+----
 
 ### 2. Création d'une interface fonctionnelle
 
@@ -179,7 +179,7 @@ Calculator addition = (x, y) -> x + y;
 System.out.println(addition.calculate(5, 3));  // Output : 8
 ```
 
---
+----
 
 ### 3. Comment fonctionnent les interfaces fonctionnelles avec les lambdas
 
@@ -191,13 +191,13 @@ Par exemple, on peut créer une instance de `Runnable` (qui est une interface fo
 Runnable runnable = () -> System.out.println("Hello, World!");
 ```
 
---
+----
 
 ### 4. Types d'interfaces fonctionnelles
 
 Il y a plusieurs interfaces fonctionnelles fournies dans la bibliothèque standard de Java.
 
---
+----
 
 #### `Predicate<T>`
 
@@ -209,7 +209,7 @@ Il y a plusieurs interfaces fonctionnelles fournies dans la bibliothèque standa
 Predicate<String> lengthIsGreaterThan5 = str -> str.length() > 5;
 ```
 
---
+----
 
 #### `Function<T, R>`
 
@@ -221,7 +221,7 @@ Predicate<String> lengthIsGreaterThan5 = str -> str.length() > 5;
 Function<String, Integer> stringLength = str -> str.length();
 ```
 
---
+----
 
 #### `Consumer<T>`
 
@@ -233,7 +233,7 @@ Function<String, Integer> stringLength = str -> str.length();
 Consumer<String> printString = str -> System.out.println(str);
 ```
 
---
+----
 
 #### `Supplier<T>`
 
@@ -245,7 +245,7 @@ Consumer<String> printString = str -> System.out.println(str);
 Supplier<String> stringSupplier = () -> "Hello, World!";
 ```
 
---
+----
 
 ### 5. `Method References`
 
@@ -258,7 +258,7 @@ Il existe quatre types de références de méthodes :
 - Référence à une méthode d'instance d'un objet arbitraire d'un type particulier (`String::length`).
 - Référence à un constructeur (`ArrayList::new`).
 
---
+----
 
 ### 6. Exemples et exercices pratiques
 
@@ -278,7 +278,7 @@ Il existe quatre types de références de méthodes :
 5. Exemple d'application.
 6. Exemples et exercices pratiques
 
---
+----
 
 ### 1. Qu'est-ce qu'un stream?
 
@@ -288,7 +288,7 @@ Un Stream dans Java est une séquence d'éléments supportant différentes méth
 - Ils ne modifient pas la source de données d'origine.
 - Ils peuvent être parcourus une seule fois.
 
---
+----
 
 ### 2. Différences entre les collections et les streams
 
@@ -296,7 +296,7 @@ Alors que les collections sont des structures de données essentiellement destin
 
 Les streams offrent également l'avantage d'être potentiellement infinis et de permettre des opérations paresseuses (c'est-à-dire des opérations qui ne sont réalisées que lorsque c'est nécessaire).
 
---
+----
 
 ### 3. Création de streams
 
@@ -320,7 +320,7 @@ List<String> list = Arrays.asList("A", "B", "C");
 Stream<String> stream = list.stream();
 ```
 
---
+----
 
 ### 4. Opérations sur les streams
 
@@ -330,7 +330,7 @@ Stream<String> stream = list.stream();
 
 `reduce(BinaryOperator accumulator)`: prend une fonction qui accepte deux arguments et produit un résultat, et renvoie un Optional qui décrit le résultat de l'accumulation.
 
---
+----
 
 ### 5. Exemple d'application
 
@@ -345,7 +345,7 @@ Optional<Integer> sum = numbers.stream()
 System.out.println(sum.get());  // Affiche 220
 ```
 
---
+----
 
 ### . Exemples et exercices pratiques
 
@@ -362,7 +362,7 @@ System.out.println(sum.get());  // Affiche 220
 3. Les opérations en parallèle et leur utilisation
 4. Exemples et exercices pratiques
 
---
+----
 
 ### 1. Collecteurs
 
@@ -389,13 +389,13 @@ Map<String, Integer> map = Stream.of("A", "B", "C")
                               .collect(Collectors.toMap(Function.identity(), String::length));
 ```
 
---
+----
 
 ### 2. Opérations d'agrégation
 
 Les opérations d'agrégation sont des opérations terminales qui renvoient un certain type de résultat des streams.
 
---
+----
 
 #### `count()`
 
@@ -405,7 +405,7 @@ Compte le nombre d'éléments dans un stream.
 long count = Stream.of("A", "B", "C").count(); // 3
 ```
 
---
+----
 
 #### `min(Comparator)` et `max(Comparator)`
 
@@ -416,7 +416,7 @@ Optional<String> min = Stream.of("A", "B", "C")
                         .min(Comparator.naturalOrder()); // Optional[A]
 ```
 
---
+----
 
 #### `sum()`
 
@@ -427,7 +427,7 @@ Optional<String> min = Stream.of("A", "B", "C")
 int sum = IntStream.of(1, 2, 3, 4).sum(); // 10
 ```
 
---
+----
 
 #### `average()`
 
@@ -437,7 +437,7 @@ int sum = IntStream.of(1, 2, 3, 4).sum(); // 10
 ```java
 OptionalDouble average = IntStream.of(1, 2, 3, 4).average(); // OptionalDouble[2.5]
 ```
---
+----
 
 ### 3. Les opérations en parallèle et leur utilisation
 
@@ -445,7 +445,7 @@ Java Streams offre également la possibilité d'exécuter des opérations en par
 
 Notez cependant que toutes les tâches ne bénéficient pas d'une exécution en parallèle, et certaines peuvent même être plus lentes à cause des coûts de surcharge liés à la mise en place du parallélisme.
 
---
+----
 
 ### 4. Exemples et exercices pratiques
 
@@ -466,7 +466,7 @@ Notez cependant que toutes les tâches ne bénéficient pas d'une exécution en 
 3. Meilleures pratiques pour utiliser les lambdas et les streams
 4. Exemples et exercices pratiques
 
---
+----
 
 ### 1. Application des concepts précédents dans des scénarios réels
 
@@ -483,7 +483,7 @@ Exemple : Imaginez que vous ayez une liste de personnes et que vous vouliez obte
       .collect(Collectors.toList());
   ```
 
---
+----
 
 ### 2. Comment choisir entre les lambdas et les méthodes traditionnelles
 
@@ -495,7 +495,7 @@ Cependant, les méthodes traditionnelles peuvent être plus appropriées lorsque
 
 De plus, dans certaines situations, l'utilisation de méthodes traditionnelles peut conduire à un code plus performant.
 
---
+----
 
 ### 3. Meilleures pratiques pour utiliser les lambdas et les streams
 
@@ -507,7 +507,7 @@ Utilisez les streams pour les opérations sur les collections. Cependant, n'oubl
 
 Utilisez `parallelStream` avec précaution. Il peut améliorer les performances pour les grandes collections, mais il peut aussi introduire des problèmes d'ordre et de synchronisation.
 
---
+----
 
 ### 4. Exemples et exercices pratiques
 

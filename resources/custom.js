@@ -1,8 +1,8 @@
-import Reveal from '/wiki/reveal/dist/reveal.esm.js'
+import Reveal from '/reveal/dist/reveal.esm.js'
 
-import RevealNotes from '/wiki/reveal/plugin/notes/notes.esm.js';
-import RevealMarkdown from '/wiki/reveal/plugin/markdown/markdown.esm.js';
-import RevealHighlight from '/wiki/reveal/plugin/highlight/highlight.esm.js';
+import RevealNotes from '/reveal/plugin/notes/notes.esm.js';
+import RevealMarkdown from '/reveal/plugin/markdown/markdown.esm.js';
+import RevealHighlight from '/reveal/plugin/highlight/highlight.esm.js';
 
 Reveal.initialize({
     hash: true,

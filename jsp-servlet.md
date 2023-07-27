@@ -23,7 +23,7 @@
 4. Qu'est-ce qu'un serveur ?
 5. Quelle est la différence entre un serveur web et un serveur d'application ?
 
---
+----
 
 ### 1. Qu'est-ce qu'un protocole ?
 
@@ -32,14 +32,14 @@
 - Les protocoles peuvent définir des détails tels que la manière dont la connexion est établie, le format des données envoyées, la manière dont les erreurs sont détectées et corrigées, etc.
 - Des exemples de protocoles couramment utilisés incluent HTTP, HTTPS, FTP, SMTP, TCP/IP, UDP ...
 
---
+----
 
 ### 2. Qu'est-ce qu'un port ?
 
 - Un port est utilisé par le protocole de transport (comme TCP ou UDP) pour distinguer les différentes applications ou processus qui communiquent sur le réseau.
 - C'est comme un numéro d'appartement pour les données - il aide le système à savoir où envoyer les données.
 
---
+----
 
 ### 3. Qu'est-ce qu'HTTP ?
 
@@ -48,7 +48,7 @@
 - Une communication HTTP est faite de requêtes envoyées par le client et de réponses renvoyées par le serveur.
 - HTTP utilise plusieurs méthodes, comme GET pour récupérer des informations, POST pour envoyer des informations, PUT pour mettre à jour des informations, et DELETE pour supprimer des informations.
 
---
+----
 
 ### 4. Qu'est-ce qu'un serveur ?
 
@@ -56,7 +56,7 @@
 - En termes plus généraux, on peut aussi parler de "serveur" pour désigner le logiciel qui implémente une telle fonctionnalité, quel que soit le type de machine sur lequel il tourne.
 - Les serveurs peuvent être utilisés pour gérer l'accès aux ressources, envoyer des messages, stocker des fichiers, fournir des sites web, etc.
 
---
+----
 
 ### 5. Quelle est la différence entre un serveur web et un serveur d'application ?
 
@@ -72,7 +72,7 @@
 2. Qu'est-ce qu'une JSP ?
 3. Pourquoi utiliser Servlets et JSP ?
 
---
+----
 
 ### 1. Qu'est-ce qu'un Servlet ?
 
@@ -80,7 +80,7 @@
 - Il est généralement utilisé pour générer des pages web dynamiques en réponse à des requêtes de clients.
 - Les Servlets peuvent lire des données envoyées par les utilisateurs (par exemple, des données d'un formulaire), lire les cookies HTTP et les en-têtes HTTP, et envoyer des documents HTML au client.
 
---
+----
 
 ### 2. Qu'est-ce qu'une JSP ?
 
@@ -89,7 +89,7 @@
 - Les JSP sont compilées en Servlets par le serveur web, ce qui signifie que vous pouvez utiliser toutes les fonctionnalités des Servlets dans vos JSP.
 - En général, les JSP sont utilisées pour la présentation et les Servlets pour la logique métier.
 
---
+----
 
 ### 3. Pourquoi utiliser Servlets et JSP ?
 
@@ -106,7 +106,7 @@
 3. Qu'est-ce que Tomcat ?
 4. Comment configurer Tomcat dans Eclipse ?
 
---
+----
 
 ### 1. Qu'est-ce qu'Eclipse ?
 
@@ -114,21 +114,21 @@
 - Il offre une multitude de fonctionnalités, comme l'achèvement automatique du code, la refactorisation intelligente, et le débogage facile.
 - Il a également un support intégré pour Maven, qui est un outil de gestion des dépendances pour Java.
 
---
+----
 
 ### 2. Comment configurer Eclipse pour le développement web Java ?
 
 - Vous pouvez télécharger Eclipse IDE for Enterprise Java and Web Developers sur le site web officiel d'Eclipse.
 - Une fois installé, vous pouvez créer un nouveau projet Maven avec support web.
 
---
+----
 
 ### 3. Qu'est-ce que Tomcat ?
 
 - Apache Tomcat est un serveur d'applications Java qui peut exécuter des applications web écrites en Java, y compris les Servlets et les JSP.
 - C'est un choix populaire pour le développement et le déploiement d'applications web Java.
 
---
+----
 
 ### 4. Comment configurer Tomcat dans Eclipse ?
 
@@ -146,7 +146,7 @@
 5. Gestion des réponses HTTP
 6. Gestion des cookies
 
---
+----
 
 ### 1. Cycle de vie d'un Servlet
 
@@ -155,13 +155,13 @@
 3. Traitement des requêtes : Le Servlet traite les requêtes HTTP en utilisant la méthode `service()`. Cette méthode appelle généralement les méthodes `doGet()` ou `doPost()` selon la méthode HTTP utilisée.
 4. Destruction : Lorsque le Servlet n'est plus nécessaire ou que le serveur web s'arrête, le Servlet est détruit avec la méthode `destroy()`.
 
---
+----
 
 #### Cycle de vie d'un Servlet - Illustration
 
-![Illustration](/wiki/resources/servlet-cycle-de-vie.jpg)
+![Illustration](/resources/servlet-cycle-de-vie.jpg)
 
---
+----
 
 ### 2. Création et configuration d'un Servlet
 
@@ -169,7 +169,7 @@
 - Annoter la classe avec `@WebServlet` pour indiquer au serveur qu'il s'agit d'un Servlet.
 - Implémentez les méthodes nécessaires pour gérer les requêtes HTTP (par exemple, `doGet()` ou `doPost()`).
 
---
+----
 
 #### Exemple de Servlet
 
@@ -200,7 +200,7 @@ public class HelloServlet extends HttpServlet {
 }
 ```
 
---
+----
 
 #### Annotation @WebServlet
 
@@ -211,7 +211,7 @@ L'annotation `@WebServlet` est utilisée pour déclarer un Servlet en Java. Elle
 - `initParams` : Les paramètres d'initialisation du servlet.
 - `loadOnStartup` : L'ordre de chargement du servlet lors du démarrage du serveur.
 
---
+----
 
 ### 3. Gestion des requêtes HTTP
 
@@ -225,7 +225,7 @@ Les Servlets gèrent différentes méthodes HTTP via les méthodes correspondant
 
 Chaque méthode `doXXX` a la même signature : `(HttpServletRequest req, HttpServletResponse resp)`
 
---
+----
 
 #### Obtenir des informations sur une requête
 
@@ -237,7 +237,7 @@ Pour obtenir les informations sur la requête HTTP, nous utilisons les méthodes
 - getPathInfo(): renvoie des informations supplémentaires de l'URI de la requête qui suivent le nom de la servlet.
 - getRemoteAddr(): renvoie l'adresse IP de l'ordinateur client qui a envoyé la requête.
 
---
+----
 
 #### Récupération des paramètres de requête
 
@@ -249,7 +249,7 @@ L'objet `HttpServletRequest` permet de récupérer les paramètres de la requêt
   // ...
 ```
 
---
+----
 
 #### Utilisation des attributs de requête
 
@@ -262,7 +262,7 @@ Les attributs de requête sont des données qui sont associées à une requête 
   String nom = (String) servletRequest.getAttribute("nom");
 ```
 
---
+----
 
 ### 4. Gestion des sessions
 
@@ -277,7 +277,7 @@ Les attributs de requête sont des données qui sont associées à une requête 
 
 - Si vous voulez vérifier s'il existe déjà une session sans en créer une nouvelle, vous pouvez utiliser `request.getSession(false)` elle renvoie null s'il n'y a pas de session.
 
---
+----
 
 #### Utilisation des attributs de session
 
@@ -292,7 +292,7 @@ Les attributs de session sont des données qui sont associées à une session ut
   String nom = (String) session.getAttribute("nom");
 ```
 
---
+----
 
 #### Destruction de la Session
 
@@ -302,7 +302,7 @@ La session est détruite quand :
 2. Invalidation de la session : Vous pouvez explicitement détruire une session en utilisant `session.invalidate()`.
 3. Arrêt du serveur : Si le serveur s'arrête ou redémarre, toutes les sessions en cours sont détruites.
 
---
+----
 
 ### 5. Gestion des réponses HTTP
 
@@ -310,7 +310,7 @@ La session est détruite quand :
 - Vous pouvez définir le code de statut, les en-têtes et le contenu de la réponse.
 - Pour générer du contenu HTML, utilisez un `PrintWriter` pour écrire directement dans la réponse.
 
---
+----
 
 ### 6. Gestion des cookies
 
