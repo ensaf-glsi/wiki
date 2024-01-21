@@ -1,7 +1,3 @@
-D'accord, voici un exemple de sommaire pour un cours sur le Spring Framework. Ce sommaire est conçu pour couvrir les aspects fondamentaux et avancés de Spring, en tenant compte de votre expérience précédente en enseignement Java, JSP, Servlets et autres concepts de programmation Java.
-
----
-
 # Cours sur le Spring Framework
 
 ---
@@ -75,7 +71,3 @@ D'accord, voici un exemple de sommaire pour un cours sur le Spring Framework. Ce
 14. **Ressources et Communauté Spring**
     - Ressources pour approfondir
     - Participation à la communauté Spring
-
----
-
-Ce sommaire couvre un large éventail de sujets sur Spring, de l'introduction de base aux concepts avancés comme Spring Cloud et la sécurité, en passant par les meilleures pratiques et les projets pratiques. Cela devrait fournir un cadre solide pour un cours complet sur le Spring Framework.
