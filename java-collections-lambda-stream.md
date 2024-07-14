@@ -131,7 +131,7 @@ Les expressions lambda permettent d'écrire du code plus concis et plus lisible.
     () -> System.out.println("Hello World")
 
     // Avec un seul paramètre:
-    n -> n * n
+    n -> n * n // <=> (n) -> { return n * n ;}
 
     // Avec plusieurs paramètres:
     (a, b) -> a * b
