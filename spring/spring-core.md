@@ -130,17 +130,26 @@ public class MainApp {
 public class MyService {
     
     private final MyRepository myRepository;
-
     @Autowired
+    private MyRespository2 myRespository2;
+
     public MyService(MyRepository myRepository) {
         this.myRepository = myRepository;
     }
 }
+
+@Service
+@RequiredArgsConstructor
+public class MyService {
+
+  private final MyRepository myRepository;
+  private final MyRespository2 myRespository2;
+
+}
+
 ```
 
 - **Avantages** :
     - Simplifie l’injection des dépendances.
     - **Spring** analyse automatiquement les dépendances à injecter.
-
----
 

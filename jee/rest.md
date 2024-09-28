@@ -37,7 +37,7 @@ Prenons un exemple s'articulant autour de 2 tables : `car` et `person`. Une pers
 `GET /v1/cars/{id}`
 - L'identifiant de l'objet recherché est passé dans le path (`@PathVariable Long id`)
 - le WS doit retourner un unique objet. Si l'objet n'est pas trouvé un code d'erreur **404** (=`Not found`) est retourné au client car une recherche par identifiant sous-entend que l'enregistrement est censé exister. 
-**_Remarque:_** La classe `AbstractMuseController` (dont **tous les controller doivent hériter**) permet de gérer automatiquement une `ObjectNotFoundException` afin de la transformer en erreur 404.
+**_Remarque:_**
 
 On peut même aller plus loin:
 `GET /v1/persons/{id}/cars/{carId}`
